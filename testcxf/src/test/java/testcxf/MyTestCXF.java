@@ -11,8 +11,8 @@ import cn.sky.testcxf.serviceout.UserService;
 
 public class MyTestCXF {
 	public static void main(String[] args) {
-		testcxf1();
-//		testcxf2();
+//		testcxf1();
+		testcxf2();
 	}
 	
 	/**

@@ -11,7 +11,8 @@ import cn.sky.testcxf.bean.User;
 
 
 @WebService(
-		targetNamespace="http://bean.testcxf.sky.cn"//targetNamespace:业务类所在路径
+		targetNamespace="http://bean.testcxf.sky.cn/"//targetNamespace:业务类所在路径
+//		targetNamespace="http://serviceout.testcxf.sky.cn/"//会报错类型转换失败
 )
 public interface UserService {
 	

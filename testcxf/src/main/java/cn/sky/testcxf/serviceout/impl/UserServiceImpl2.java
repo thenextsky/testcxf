@@ -15,7 +15,8 @@ import cn.sky.testcxf.serviceout.UserService;
 //endpointInterface:接口类所在路径
 @WebService(
 		serviceName="UserService2",
-		targetNamespace="http://bean.testcxf.sky.cn",//与接口中的命名空间一致
+		targetNamespace="http://bean.testcxf.sky.cn/",//与接口中的命名空间一致
+//		targetNamespace="http://serviceout.testcxf.sky.cn/",//会报错类型转换失败
 		endpointInterface="cn.sky.testcxf.serviceout.UserService"//接口地址
 		)
 @Component("userService222")
