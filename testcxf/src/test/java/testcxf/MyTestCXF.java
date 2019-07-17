@@ -20,7 +20,7 @@ public class MyTestCXF {
 	 */
 	private static void testcxf1() {
 		//接口地址
-		String address = "http://localhost:8080/skypoj/services/UserService_publish1?wsdl";
+		String address = "http://localhost:8080/skypoj/myservices/UserService_publish1?wsdl";
 		//代理工厂
 		JaxWsProxyFactoryBean jaxWsProxyFactoryBean = new JaxWsProxyFactoryBean();
 		//设置代理地址
@@ -46,7 +46,7 @@ public class MyTestCXF {
 	private static void testcxf2() {
 		//创建动态客户端
 		JaxWsDynamicClientFactory dcf = JaxWsDynamicClientFactory.newInstance();
-		Client client = dcf.createClient("http://localhost:8080/skypoj/services/UserService_publish2?wsdl");
+		Client client = dcf.createClient("http://localhost:8080/skypoj/myservices/UserService_publish2?wsdl");
 		Object[] os;
 		try {
 			os = client.invoke("getUserById", new Integer(1));
